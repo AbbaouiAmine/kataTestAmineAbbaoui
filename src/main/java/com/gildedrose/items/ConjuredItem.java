@@ -30,6 +30,15 @@ public class ConjuredItem extends StandardItem {
 		super(item);
 	}
 
+	/**
+	 * Polymorphic function responsible on updating the quality and the sellIn state
+	 */
+	public void updateQuality() {
+		this.item.quality = this.item.quality - 2;
+		this.item.sellIn--;
+		this.checkMaxQuality();
+		this.checkQualityNegativity();
+	}
 
 
 }

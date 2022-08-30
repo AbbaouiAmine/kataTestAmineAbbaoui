@@ -63,5 +63,29 @@ public class StandardItem {
 	 * Polymorphic function responsible on updating the quality and the sellIn state
 	 */
 	public void updateQuality() {
+		int valueOfDecrease = 1;
+		if (this.item.sellIn < 0)
+			valueOfDecrease = 2;
+		this.item.quality = this.item.quality - valueOfDecrease;
+		this.item.sellIn--;
+
+		this.checkMaxQuality();
+		this.checkQualityNegativity();
+	}
+
+	/**
+	 * Check the maximum value of an item
+	 */
+	protected void checkMaxQuality() {
+		if (this.item.quality > 50)
+			this.item.quality = 50;
+	}
+
+	/**
+	 * Check the positivity of the quality of an item
+	 */
+	protected void checkQualityNegativity() {
+		if (this.item.quality < 0)
+			this.item.quality = 0;
 	}
 }

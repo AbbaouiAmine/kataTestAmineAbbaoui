@@ -105,7 +105,7 @@ class GildedRoseTest {
 		GildedRose app = new GildedRose(items);
 		app.updateQuality();
 		assertEquals(4, app.getItemByIndex(0).getSellIn());
-		assertEquals(50, app.getItemByIndex(0).getQuality());
+		assertEquals(80, app.getItemByIndex(0).getQuality());
 	}
 
 	/**
