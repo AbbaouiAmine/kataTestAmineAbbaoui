@@ -1,5 +1,5 @@
 # Kata refractoring : Gilded Rose
-This repository present a kata refactoring test using TDD approach and OOP principale in order to improve the encapsulation and dependecies implementation, the test senario is based in 8 unit test cases that can be edited dependeing on the functional requirements understanding.
+This repository present a kata refactoring test using TDD approach and OOP principale in order to improve the encapsulation and dependecies implementation, the test senario is based on 8 unit test cases that can be edited dependeing on the functional requirements understanding.
 
 ## Summary
 1. [Summary](#Summary)
@@ -8,6 +8,7 @@ This repository present a kata refactoring test using TDD approach and OOP princ
 
 ## Running 
 You can use your IDE to run the test or using command line interface
+
 Run the test class :
 > cd ./kataTestAmineAbbaoui
 
