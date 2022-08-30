@@ -30,4 +30,14 @@ public class AgedBrieItem extends StandardItem {
 		super(item);
 	}
 
+	/**
+	 * Polymorphic function responsible on updating the quality and the sellIn state
+	 */
+	public void updateQuality() {
+		this.item.quality++;
+		this.item.sellIn--;
+		this.checkMaxQuality();
+		this.checkQualityNegativity();
+	}
+
 }

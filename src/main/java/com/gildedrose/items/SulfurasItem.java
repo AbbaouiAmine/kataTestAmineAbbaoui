@@ -30,5 +30,20 @@ public class SulfurasItem extends StandardItem {
 		super(item);
 	}
 
+	/**
+	 * Polymorphic function responsible on updating the quality and the sellIn state
+	 */
+	public void updateQuality() {
+		this.item.quality = this.item.quality;
+		this.item.sellIn--;
+		this.checkMaxQuality();
+		this.checkQualityNegativity();
+	}
 
+	/**
+	 * Check the maximum value of a Sulfuras item
+	 */
+	protected void checkMaxQuality() {
+		this.item.quality = 80;
+	}
 }
